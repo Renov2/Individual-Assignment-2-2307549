@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width', initial-scale=1.0">
+        <title>Checkout</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+        <link rel="icon" type="image/x-icon" href="../Assets/Logo-favicon.png">    
+    </head>
+
+<body>
+        <!--NAVBAR-->
+        <header id="header">
+            <a href="index.html"><img src="../Assets/Logo.svg" class="logo" alt="Rehone Logo"></a>
+            
+            <nav>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a class = "active" onclick="openCart()" id="lg-bag"><i id="cart-icon"class="fa-solid fa-cart-shopping"></i></a></li>
+                    <a href="" id="close"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </nav>
+
+            <div id="mobile">
+                <a onclick="openCart()"> <i class="fa-solid fa-cart-shopping"></i> </a>
+                <i id="bar" class="fa-solid fa-bars" onclick="closeCart()"></i>
+            </div>
+        </header>
+
+
+        <!--CART SIDEBAR-->
+        <aside id="cart-container">
+            <!--HEADER-->
+            <div id="cart-header">
+                <i id="cart-icon"class="fa-solid fa-cart-shopping"></i>
+                <div id="cart-total">
+                    <h3 id="text">Total:</h3>
+                    <h3 id="price">$10,643</h3>
+                </div>
+                <i onclick="closeCart()" id="x-close" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <!--CART ITEMS-->
+            
+            <div class="cart-scroll-container">
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 8.png" alt="Iphone 16 Pro">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">IPHONE 16 PRO</h4>
+                            <h4 class="cart-item-price">$1,099/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">3</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $3,297</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 20.png" alt="Apple Airpods Max">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">AIRPODS MAX</h4>
+                            <h4 class="cart-item-price">$599/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $599</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 22.png" alt="Apple Watch Ultra 2">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">WATCH ULTRA 2</h4>
+                            <h4 class="cart-item-price">$799/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $799</h3>
+                    </div>
+
+                </div>
+        
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 4.png" alt="Samsung Galaxy S25">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">SAMSUNG</h4>
+                            <h4 class="cart-item-prod-name">GALAXY S25</h4>
+                            <h4 class="cart-item-price">$899/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">4</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $3,596</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 6.png" alt="Google Pixel 10 Pro Fold">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">GOOGLE</h4>
+                            <h4 class="cart-item-prod-name">PIXEL 10 PRO FOLD</h4>
+                            <h4 class="cart-item-price">$1699/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $1699</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 24.png" alt="Ugreen 40Watt Type-C Charger">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">UGREEN</h4>
+                            <h4 class="cart-item-prod-name">40W Type-C Charger</h4>
+                            <h4 class="cart-item-price">$27/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">2</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $54</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 9.png" alt="Apple Iphone 16e">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">IPHONE 16E</h4>
+                            <h4 class="cart-item-price">$599/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $599</h3>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <!--CHECKOUT BUTTON-->
+            <div id="cart-checkout">
+                <a href="checkout.html"><button id="cart-checkoutBtn" class="button" type="button"><h3>checkout</h3></button></a>
+            </div>
+        </aside>
+
+        <!--MAIN CONTENT-->
+        <section id="checkout">
+            <h1>CHECKOUT</h1>
+            <div id="checkout-content">
+
+                 <!--CHECKOUT FORM ( SHIPPING & PAYMENT )-->
+                <div id="checkout-form">
+                    <form>
+                         <!--SHIPPING INFO FORM-->
+                        <div id="shipping-form">
+                            <h2>Shipping Info</h2>
+                            
+                                <!--Full Name-->
+                                <div class ="field">
+                                    <div class="input-label">
+                                        <p class="input-fullname"><mark class="red">*</mark>Full Name</p>
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="checkout-fullname-input">
+                                            <i class="fa-solid fa-circle-user"></i>
+                                        </label>
+                                        <input required type="text" name="fullname" id="checkout-fullname-input" placeholder="e.g max verstappen">
+                                    </div>
+                                </div>
+
+                                <!--Street Address-->
+                                <div class ="field">
+                                    <div class="input-label">
+                                        <p class="input-street"><mark class="red">*</mark>Street Address</p>
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="checkout-street-input">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </label>
+                                        <input required type="text" name="street" id="checkout-street-input" placeholder="">
+                                    </div>
+                                </div>
+
+                                <!--Address etc (City State/Province Zip/Postal Code)-->
+                                <div class="input-collection">
+
+                                    <!--City-->
+                                    <div class ="field">
+                                        <div class="input-label">
+                                            <p class="input-city"><mark class="red">*</mark>City</p>
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="checkout-city-input">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </label>
+                                            <input required type="text" name="city" id="checkout-city-input" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <!--State/Province-->
+                                    <div class ="field">
+                                        <div class="input-label">
+                                            <p class="input-state-province"><mark class="red">*</mark>State/Province</p>
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="checkout-state-province-input">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </label>
+                                            <input required type="text" name="state-province" id="checkout-state-province-input" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <!--Zip/Postal-->
+                                    <div class ="field">
+                                        <div class="input-label">
+                                            <p class="input-zip-postal"><mark class="red">*</mark>Zip/Postal</p>
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="checkout-zip-postal-input">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </label>
+                                            <input required type="text" name="state-province" id="checkout-zip-postal-input" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Country-->
+                                <div class ="field">
+                                    <div class="input-label">
+                                        <p class="input-country"><mark class="red">*</mark>Country</p>
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="checkout-fullname-input">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </label>
+                                        <input required type="text" name="fullname" id="checkout-fullname-input" placeholder="">
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="partition-line"></div>
+                         <!--PAYMENT INFO FORM-->
+                        <div id="payment-form">
+                            <div id="payment-title">
+                                <h2>Payment Info</h2>
+                                <div id="accepted-payment">
+                                    <div class="payment-type"><img src="../Assets/mastercard icon.png" alt=""></div>
+                                    <div class="payment-type"><img src="../Assets/visa icon.png" alt=""></div>
+                                    <div class="payment-type"><img src="../Assets/apple pay icon.png" alt=""></div>
+                                    <div class="payment-type"><img src="../Assets/paypal icon.png" alt=""></div>
+                                </div>
+                            </div>
+                            
+                                <!--Card Number-->
+                                <div class ="field">
+                                    <div class="input-label">
+                                        <p class="input-cardnum"><mark class="red">*</mark>Card Number</p>
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="checkout-cardnum-input">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </label>
+                                        <input required type="text" inputmode="numeric" name="cardnum" id="checkout-cardnum-input" placeholder="xxxx xxxx xxxx xxxx" minlength="16" maxlength="16" >
+                                    </div>
+                                </div>
+
+                                <!--Card Info etc (Expiry Date & CVV)-->
+                                <div class="input-collection">
+
+                                    <!--Expiry Date-->
+                                    <div class ="field">
+                                        <div class="input-label">
+                                            <p class="input-exp-date"><mark class="red">*</mark>Expiry Date</p>
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="checkout-exp-date-input">
+                                                <i class="fa-solid fa-calendar"></i>
+                                            </label>
+                                            <input type="date" inputmode="numeric" name="exp-date" id="checkout-exp-date-input" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <!--CVV-->
+                                    <div class ="field">
+                                        <div class="input-label">
+                                            <p class="input-cvv"><mark class="red">*</mark>CVV</p>
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="checkout-cvv-input">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </label>
+                                            <input required type="text" inputmode="numeric" name="cvv" id="checkout-cvv-input" placeholder="123" minlength="3" maxlength="3">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div id="checkoutBtn-collection">
+                                    <button type="submit" id="checkoutBtn">checkout</button>
+                                    <button type="button" onclick="history.back()" id="closeBtn">close</button>
+                                </div>
+                        
+                        </div>
+                    </form>
+                </div>
+
+                <!--CHECKOUT ORDER SUMMARY-->
+                <div id="order-summary"> 
+                    <h2>Order Summary</h2>
+                    <!--ORDER PREVIEW CAROUSEL-->
+                    <div id="checkout-carousel">
+                        <div class="checkout-item">
+                            <img src="../Assets/Products/prod 8.png" alt="Apple Iphone 16 Pro">
+                            <label><h3>APPLE</h3><p>IPHONE 16 PRO</p></label>
+                            <h3 class="checkout-item-subtotal">$3,297</h3>
+                            <h3 class="checkout-item-quantity">3</h3>
+                        </div>
+                        <div class="checkout-item">
+                            <img src="../Assets/Products/prod 20.png" alt="Apple Airpods Max">
+                            <label><h3>Apple</h3><p>Airpods Max</p></label>
+                            <h3 class="checkout-item-subtotal">$599</h3>
+                            <h3 class="checkout-item-quantity">1</h3>
+                        </div>
+                        <div class="checkout-item">
+                            <img src="../Assets/Products/prod 22.png" alt="Apple Watch Ultra 2">
+                            <label><h3>APPLE</h3><p>WATCH ULTRA 2</p></label>
+                            <h3 class="checkout-item-subtotal">$799</h3>
+                            <h3 class="checkout-item-quantity">1</h3>
+                        </div>
+                        <div class="checkout-item">
+                            <img src="../Assets/Products/prod 4.png" alt="Samsung Galaxy S25">
+                            <label><h3>SAMSUNG</h3><p>GALAXY S25</p></label>
+                            <h3 class="checkout-item-subtotal">$3,596</h3>
+                            <h3 class="checkout-item-quantity">4</h3>
+                        </div>
+                        <div class="checkout-item">
+                            <img src="../Assets/Products/prod 6.png" alt="Google Pixel 10 Pro Fold">
+                            <label><h3>GOOGLE</h3><p>PIXEL 10 PRO FOLD</p></label>
+                            <h3 class="checkout-item-subtotal">$1699</h3>
+                            <h3 class="checkout-item-quantity">1</h3>
+                        </div>
+                        <div class="checkout-item">
+                            <img src="../Assets/Products/prod 24.png" alt="Ugreen 40W Type-C Charger">
+                            <label><h3>UGREEN</h3><p>40W TTYPE-C CHARGER</p></label>
+                            <h3 class="checkout-item-subtotal">$54</h3>
+                            <h3 class="checkout-item-quantity">2</h3>
+                        </div>
+                        <div class="checkout-item">
+                            <img src="../Assets/Products/prod 9.png" alt="Apple Iphone 16e">
+                            <label><h3>APPLE</h3><p>IPHONE 16 E</p></label>
+                            <h3 class="checkout-item-subtotal">$599</h3>
+                            <h3 class="checkout-item-quantity">1</h3>
+                        </div>
+                    </div>
+                    <button class="button" id="clear-allBtn">clear all</button>
+                    <!--ORDER SUMMARY COSTS-->
+                    <div id="checkout-summary">
+                        <!--SUBTOTAL-->
+                        <div class="checkout-summary-text">
+                            <div class="text-left"><h3>Subtotal:</h3></div>
+                            <div class="text-right"><h3>$10,643</h3></div>
+                        </div>
+
+                        <!--TAX-->
+                        <div class="checkout-summary-text">
+                            <div class="text-left"><h3>Tax:</h3></div>
+                            <div class="text-right"><h3>$255</h3></div>
+                        </div>
+
+                        <!--SHIPPING COST-->
+                        <div class="checkout-summary-text">
+                            <div class="text-left"><h3>Shipping:</h3></div>
+                            <div class="text-right"><h3>$64</h3></div>
+                        </div>
+
+                        <!--DISCOUNT-->
+                        <div class="checkout-summary-text">
+                            <div class="text-left"><h3>Discount:</h3></div>
+                            <div class="text-right"><h3>N/A</h3></div>
+                        </div>
+
+                        <div class="partition-line" id="order-parititon"></div>
+
+                        <!--CHECKOUT TOTAL-->
+                        <div class="checkout-summary-text" >
+                            <div class="text-left"><h3 class="checkout-total">Total:</h3></div>
+                            <div class="text-right"><h3 class="checkout-total">$10,962</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FOOTER-->
+        <footer>
+
+            <div id="text">
+                <p>Copyright © 2025 Rehone LLC. All rights reserved.</p>
+                <p class="break">|</p>
+
+                <a class="hyper" href="privacy.html">Privacy Policy</a>
+                <p class="break">|</p>
+
+                <a class="hyper" href="site_map.html">Site Map</a>
+                <p class="break">|</p>
+
+                <!--Socials-->
+                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-square-x-twitter" ></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+
+        </footer>
+</body>
+
+    <script src="script.js"></script>
+</html>

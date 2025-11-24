@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width', initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+        <link rel="icon" type="image/x-icon" href="../Assets/Logo-favicon.png">
+    </head>
+
+<body>
+        <!--NAVBAR-->
+        <header id="header">
+            <a href="index.html"><img src="../Assets\Logo.svg" class="logo" alt="Rehone Logo"></a>
+            
+            <nav>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a class = "active" href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a onclick="openCart()" id="lg-bag"><i id="cart-icon"class="fa-solid fa-cart-shopping"></i></a></li>
+                    <a href="" id="close"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </nav>
+
+            <div id="mobile">
+                <a onclick="openCart()"> <i class="fa-solid fa-cart-shopping"></i> </a>
+                <i id="bar" class="fa-solid fa-bars" onclick="closeCart()"></i>
+            </div>
+        </header>
+
+        <!--CART SIDEBAR-->
+        <aside id="cart-container">
+            <!--HEADER-->
+            <div id="cart-header">
+                <i id="cart-icon"class="fa-solid fa-cart-shopping"></i>
+                <div id="cart-total">
+                    <h3 id="text">Total:</h3>
+                    <h3 id="price">$10,643</h3>
+                </div>
+                <i onclick="closeCart()" id="x-close" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <!--CART ITEMS-->
+            
+            <div class="cart-scroll-container">
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 8.png" alt="Iphone 16 Pro">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">IPHONE 16 PRO</h4>
+                            <h4 class="cart-item-price">$1,099/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">3</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $3,297</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 20.png" alt="Apple Airpods Max">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">AIRPODS MAX</h4>
+                            <h4 class="cart-item-price">$599/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $599</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 22.png" alt="Apple Watch Ultra 2">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">WATCH ULTRA 2</h4>
+                            <h4 class="cart-item-price">$799/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $799</h3>
+                    </div>
+
+                </div>
+        
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 4.png" alt="Samsung Galaxy S25">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">SAMSUNG</h4>
+                            <h4 class="cart-item-prod-name">GALAXY S25</h4>
+                            <h4 class="cart-item-price">$899/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">4</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $3,596</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 6.png" alt="Google Pixel 10 Pro Fold">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">GOOGLE</h4>
+                            <h4 class="cart-item-prod-name">PIXEL 10 PRO FOLD</h4>
+                            <h4 class="cart-item-price">$1699/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $1699</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 24.png" alt="Ugreen 40Watt Type-C Charger">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">UGREEN</h4>
+                            <h4 class="cart-item-prod-name">40W Type-C Charger</h4>
+                            <h4 class="cart-item-price">$27/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">2</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $54</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 9.png" alt="Apple Iphone 16e">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">IPHONE 16E</h4>
+                            <h4 class="cart-item-price">$599/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $599</h3>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <!--CHECKOUT BUTTON-->
+            <div id="cart-checkout">
+                <a href="checkout.html"><button id="cart-checkoutBtn" class="button" type="button"><h3>checkout</h3></button></a>
+            </div>
+        </aside>
+
+        <!--HEADER-->
+        <section id="about-header">
+                <div id="header-text">
+                    <h1>"REFINED <mark style="text-decoration: none;" class="premium">TECHNOLOGY</mark>, FOR A REFINED <mark style="text-decoration: none;" class="premium"> YOU</mark>."</h1>
+                    <h3>~ motto from our founder J.Roberts </h3>
+                </div>
+        </section>
+
+        <!--MAIN CONTENT-->
+        <container class="about-container">
+            <!--COMPANY VALUES HEADER-->
+            <div id="value-heading">
+                <h2>Our Values</h2>
+            </div>
+
+            <!--VALUE INFO CARDS-->
+            <div class="value-container">
+                <div id="authenticity" class="value">
+                    <h3>Authenticity</h3>
+                    <p>Integrity defines us. Every device we offer is verified, genuine, and sourced through trusted channels.</p>
+                </div>
+                <div id="innovation" class="value">
+                    <h3>Purposeful Innovation</h3>
+                    <p>Technology should empower. We champion innovation that serve real people, not trends.</p>               
+                </div>
+                <div id="sustainability" class="value">
+                    <h3>Sustainability</h3>
+                    <p>Refinement is timeless. We promote devices built to last, encouraging waste reduction and extend the life of devices.</p>                          
+                </div>
+                <div id="detailed" class="value">
+                    <h3>Detailed</h3>
+                    <p>From product selection to customer experience, every step reflects our loyalty to precision, performance, and perfection.</p>          
+                </div>
+            </div>
+
+            <!--WHO WE ARE-->
+            <section class="about-section" id="who-we-are">
+                <!--WHO WE ARE-->
+                <div id="who-we-are-text">
+                    <h2>Who We Are</h2>
+                    <p>We’re a <mark class="premium">curated digital storefront</mark>, dedicated to offering only the finest phones, electronics and accessories from the world’s leading brands. From Apple and Samsung to Google and OnePlus, our catalog is built for people who value quality, performance, and reliability above all else.</p>
+                </div>
+
+                <!--WHO WE ARE IMAGE-->
+                <div id="who-we-are-frame" class="about-secondary">
+                    <p class="phone-desc">OPPO RENO 8T</p>
+                </div >
+            </section >
+
+            <!--WHERE ARE WE?-->
+            <section class="about-section">
+                <div id="where-are-we" class="about-secondary">
+                    <h2>Where Are We?</h2>
+                </div>
+
+                <!--SOCIAL MEDIA ICONS/LINKS-->
+                <div id="where-are-we-links">
+                    <ul>
+                        <li><a target="_blank" href="https://bsky.app/"><i class="fa-brands fa-bluesky"></i></a></li>
+                        <li><a target="_blank" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></i></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a target="_blank" href="https://www.x.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        
+            <!--OUR STORY-->
+            <section class="about-section">
+                <div id="story-img" class="about-secondary">
+                    <p class="phone-desc">VIVO X FOLD +</p>
+                </div>
+                <!--OUR STORY TEXT-->
+                <div id="story-text">
+                    <div id="our-story" class="story">
+                        <h2>Our Story</h2>
+                        <p>Our founders started Rehone after realizing that even in the age of e-commerce,<mark class="premium"> buying a high-end electronics online could be overwhelming</mark>. Between fake listings, inconsistent product information, and unreliable sellers, there was no single trustworthy hub for premium devices.</p>
+                    </div>
+                    <div id="our-story2" class="story">
+                        <h2>So We Created One</h2>
+                        <p>From day one, our goal was to<mark class="premium"> combine the trust of a boutique retail experience with the convenience of online shopping</mark>. No markups, no hidden resellers, just the best devices, verified by experts, shipped directly to your door.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--OUR MISION-->
+            <section class="about-section" id="mission">
+                <div id="mission-text" >
+                    <h2>Our Mission</h2>
+                    <p><mark class="premium">To make buying premium devices simple, safe</mark>, and <mark class="premium">satisfying</mark> from anywhere in the world.</p>
+                </div>
+                <!--OUR MISION IMAGE-->
+                <div id="mission-img" class="about-secondary">
+                    <p class="phone-desc">APPLE STUDIO 5 DISPLAY</p>
+                </div>
+            </section>
+            
+            <!--WHY CHOOSE US-->
+            <section class="about-section">
+                <div id="chooseus-text">
+                    <h2>Why Choose Us</h2>
+                    <ul>
+                        <li><mark class="premium">100% Online Convenience:</mark> Shop anytime, anywhere, with secure checkout and global shipping.</li>
+                        <li><mark class="premium">Curated Premium Selection:</mark> Every device is handpicked, verified, and brand-authorized.</li>
+                        <li><mark class="premium">Expert Insights:</mark> Detailed product breakdowns and comparisons to help you choose with confidence.</li>
+                        <li><mark class="premium">Transparent Service:</mark> What you see is what you get, with no hidden fees, no resellers, no uncertainty</li>
+                        <li><mark class="premium">Fast, Secure Delivery:</mark> Premium protection for your premium purchase.</li>
+                    </ul>
+                </div>
+                <!--WHY CHOOSE US IMAGE-->
+                <div id="chooseus-img" class="about-secondary">
+                        <p class="phone-desc">OPPO RENO 10 5G</p>
+                </div>
+            </section>
+
+            <!--VISION GOING FORWARD-->
+            <section class="about-section">
+                <div id="vision">
+                    <h2>Vision Going Forward</h2>
+                    <p>As technology continues to evolve, so do we. <mark class="premium">Our goal is to expand our online platform to include next-generation devices </mark>like smart wearables, tablets, and high-end accessories. All with the same level of trust and quality you expect from us.</p>
+                </div>
+                <!--VISION GOING FORWARD IMAGE-->
+                <div id="vision-img" class="about-secondary">
+                    <p class="phone-desc">IPHONE 17 PRO</p>
+                </div>
+            </section>
+
+            <!--GET INTO CONTACT SUB-SECTION-->
+            <section class="about-section">
+                <div class="get-in-contact">
+                    <h2>Get In Contact</h2>
+                </div>
+                <!--NAME AND ID-->
+                <div class="get-in-contact">
+                    <p>Jahleel Roberts - 2307549</p>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <!--EMAI-->
+                <div class="get-in-contact">
+                    <p id="email-personal-contact">robertsjahleel002@gmail.com</p>
+                </div>
+                <!--NAME AND ID-->
+                <div class="get-in-contact">
+                        <p>CIT2011 - Individual Assignment 2</p>
+                    </div>
+            </section>
+
+            <section class="about-section">
+                <!--EMAI-->
+                <div class="get-in-contact">
+                    <p>Friday @ 8am</p>
+                </div>
+                <!--NAME AND ID-->
+                <div class="get-in-contact" id="email-contact">
+                    <p>Send us an email | 2307549@utech.edu.jm</P>
+                    <a target="_blank" href="mailto:2307549@utech.edu.jm" id="emailBtn"><button class="button" >click here!</button></a>
+                </div>
+            </section>
+            <br>
+        </container>
+    
+        <!--FOOTER-->
+        <footer>
+
+            <div id="text">
+                <p>Copyright © 2025 Rehone LLC. All rights reserved.</p>
+                <p class="break">|</p>
+
+                <a class="hyper" href="privacy.html">Privacy Policy</a>
+                <p class="break">|</p>
+
+                <a class="hyper" href="site_map.html">Site Map</a>
+                <p class="break">|</p>
+
+                <!--Socials-->
+                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-square-x-twitter" ></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+
+        </footer>
+</body>
+
+    <script src="script.js"></script>
+</html>

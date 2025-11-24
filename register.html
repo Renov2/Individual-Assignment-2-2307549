@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width', initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+        <link rel="icon" type="image/x-icon" href="../Assets/Logo-favicon.png">
+    </head>
+
+<body>
+        <!--NAVBAR-->
+        <header id="header">
+            <a href="index.html"><img src="../Assets\Logo.svg" class="logo" alt="Rehone Logo"></a>
+            
+            <nav>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class = "active" href="register.html">Register</a></li>
+                    <li><a onclick="openCart()" id="lg-bag"><i id="cart-icon"class="fa-solid fa-cart-shopping"></i></a></li>
+                    <a href="" id="close"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </nav>
+
+            <div id="mobile">
+                <a onclick="openCart()"> <i class="fa-solid fa-cart-shopping"></i> </a>
+                <i id="bar" class="fa-solid fa-bars" onclick="closeCart()"></i>
+            </div>
+        </header>
+
+        <!--CART SIDEBAR-->
+        <aside id="cart-container">
+            <!--HEADER-->
+            <div id="cart-header">
+                <i id="cart-icon"class="fa-solid fa-cart-shopping"></i>
+                <div id="cart-total">
+                    <h3 id="text">Total:</h3>
+                    <h3 id="price">$10,643</h3>
+                </div>
+                <i onclick="closeCart()" id="x-close" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <!--CART ITEMS-->
+            
+            <div class="cart-scroll-container">
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 8.png" alt="Iphone 16 Pro">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">IPHONE 16 PRO</h4>
+                            <h4 class="cart-item-price">$1,099/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">3</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $3,297</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 20.png" alt="Apple Airpods Max">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">AIRPODS MAX</h4>
+                            <h4 class="cart-item-price">$599/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $599</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 22.png" alt="Apple Watch Ultra 2">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">WATCH ULTRA 2</h4>
+                            <h4 class="cart-item-price">$799/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $799</h3>
+                    </div>
+
+                </div>
+        
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 4.png" alt="Samsung Galaxy S25">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">SAMSUNG</h4>
+                            <h4 class="cart-item-prod-name">GALAXY S25</h4>
+                            <h4 class="cart-item-price">$899/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">4</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $3,596</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 6.png" alt="Google Pixel 10 Pro Fold">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">GOOGLE</h4>
+                            <h4 class="cart-item-prod-name">PIXEL 10 PRO FOLD</h4>
+                            <h4 class="cart-item-price">$1699/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $1699</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 24.png" alt="Ugreen 40Watt Type-C Charger">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">UGREEN</h4>
+                            <h4 class="cart-item-prod-name">40W Type-C Charger</h4>
+                            <h4 class="cart-item-price">$27/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">2</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $54</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 9.png" alt="Apple Iphone 16e">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">IPHONE 16E</h4>
+                            <h4 class="cart-item-price">$599/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $599</h3>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <!--CHECKOUT BUTTON-->
+            <div id="cart-checkout">
+                <a href="checkout.html"><button id="cart-checkoutBtn" class="button" type="button"><h3>checkout</h3></button></a>
+            </div>
+        </aside>
+        
+        <!--CONTENT-->
+        <div class="row">
+            <!--FORM (LEFT SIDE)-->
+            <section id="partition-left" class="partition">
+                <div class="form-host">
+                    <h1 >REGISTER</h1>
+                    <form onsubmit="register()">
+                        <!--USERNAME-->
+                        <div class ="field">
+                            <div class="input-label">
+                                <p class="input-name">Username</p>
+                            </div>
+                            <div class="input-field">
+                                <label for="login-username-input">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </label>
+                                <input type="text" name="username" id="login-username-input" placeholder="e.g someone123">
+                            </div>
+                        </div>
+
+                        <!--FIRST & LAST NAMES-->
+                        <div class ="field">
+                            <div class="input-label">
+                                <p class="input-name"><mark class="red">*</mark>First & Last Names</p>
+                            </div>
+                            <div class="input-field">
+                                <label for="login-names-input">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </label>
+                                <input required type="text" name="names" id="login-names-input" placeholder="Illyana Rasputin">
+                            </div>
+                        </div>
+
+                        <!--EMAIL-->
+                        <div class ="field">
+                            <div class="input-label">
+                                <p class="input-name"><mark class="red">*</mark>Email</p>
+                            </div>
+                            <div class="input-field">
+                                <label for="login-email-input">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </label>
+                                <input required type="email" name="email" id="login-email-input" placeholder="someone@gmail.com">
+                            </div>
+                        </div>
+
+                        <!--PASSWORD-->
+                        <div class ="field">
+                            <div class="input-label">
+                                <p class="input-name"><mark class="red">*</mark>Password</p>
+                            </div>
+                            <div class="input-field">
+                                <label for="login-password-input">
+                                    <i class="fa-solid fa-lock"></i>
+                                </label>
+                                <input required type="password" name="password" id="login-password-input" placeholder="" minlength="8">
+                            </div>
+                        </div>
+
+                        <!--DATE OF BIRTH-->
+                        <div class ="field">
+                            <div class="input-label">
+                                <p class="input-name"><mark class="red">*</mark>Date of Birth</p>
+                            </div>
+                            <div class="input-field">
+                                <label for="login-date-input">
+                                    <i class="fa-solid fa-calendar"></i>
+                                </label>
+                                <input required type="date" name="date" id="login-date-input" placeholder="">
+                            </div>
+                        </div>
+
+                        <button id="loginBtn" type="submit" class="button">Register</button>
+                        <p id="register-text">Already have an account? <a href="login.html"> login</a></p>
+                    </form>
+                </div>
+            </section>
+
+            <!--DYANMIC BANNER (RIGHT SIDE)-->
+            <section id="partition-right" class="partition">
+                <div id="container1" class="back-drop-register">
+                    <div id="container2-register" class="splash-image">
+                        <div id ="container3">
+                            <h1 id="text1">BECOME AN OFFICIAL <mark class="premium">MEMBER</mark>.</h1>
+                            <h3 id="text2">create an account to enjoy benefits!</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+</body>
+
+    <script src="script.js"></script>
+</html>

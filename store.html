@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width', initial-scale=1.0">
+        <title>Store</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+        <link rel="icon" type="image/x-icon" href="../Assets/Logo-favicon.png">    
+    </head>
+
+<body>
+        <!--NAVBAR-->
+        <header id="header">
+            <a href="index.html"><img src="../Assets\Logo.svg" class="logo" alt="Rehone Logo"></a>
+            
+            <nav>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class = "active" href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a onclick="openCart()" id="lg-bag"><i id="cart-icon"class="fa-solid fa-cart-shopping"></i></a></li>
+                    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </nav>
+
+            <div id="mobile">
+                <a onclick="openCart()"> <i class="fa-solid fa-cart-shopping"></i> </a>
+                <i id="bar" class="fa-solid fa-bars" onclick="closeCart()"></i>
+            </div>
+        </header>
+
+        <!--CART SIDEBAR-->
+        <aside id="cart-container">
+            <!--HEADER-->
+            <div id="cart-header">
+                <i id="cart-icon"class="fa-solid fa-cart-shopping"></i>
+                <div id="cart-total">
+                    <h3 id="text">Total:</h3>
+                    <h3 id="price">$10,643</h3>
+                </div>
+                <i onclick="closeCart()" id="x-close" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <!--CART ITEMS-->
+            
+            <div class="cart-scroll-container">
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 8.png" alt="Iphone 16 Pro">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">IPHONE 16 PRO</h4>
+                            <h4 class="cart-item-price">$1,099/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">3</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $3,297</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 20.png" alt="Apple Airpods Max">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">AIRPODS MAX</h4>
+                            <h4 class="cart-item-price">$599/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $599</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 22.png" alt="Apple Watch Ultra 2">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">WATCH ULTRA 2</h4>
+                            <h4 class="cart-item-price">$799/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $799</h3>
+                    </div>
+
+                </div>
+        
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 4.png" alt="Samsung Galaxy S25">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">SAMSUNG</h4>
+                            <h4 class="cart-item-prod-name">GALAXY S25</h4>
+                            <h4 class="cart-item-price">$899/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">4</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $3,596</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 6.png" alt="Google Pixel 10 Pro Fold">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">GOOGLE</h4>
+                            <h4 class="cart-item-prod-name">PIXEL 10 PRO FOLD</h4>
+                            <h4 class="cart-item-price">$1699/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $1699</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 24.png" alt="Ugreen 40Watt Type-C Charger">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">UGREEN</h4>
+                            <h4 class="cart-item-prod-name">40W Type-C Charger</h4>
+                            <h4 class="cart-item-price">$27/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">2</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $54</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart-item-host">
+                    <div class="cart-content">
+                        <img class="cart-item-img" src="../Assets/Products/prod 9.png" alt="Apple Iphone 16e">
+
+                        <!--ITEM DESCRIPTION-->
+                        <div class="cart-item-desc">
+                            <h4 class="cart-item-brand-name">APPLE</h4>
+                            <h4 class="cart-item-prod-name">IPHONE 16E</h4>
+                            <h4 class="cart-item-price">$599/each</h4>
+                        </div>
+
+                        <!--QUANTITY-->
+                        <div class="cart-item-quantity">
+                            <h3 class="cart-quan-Btn">-</h3>
+                            <h3 class="cart-quan-value">1</h3>
+                            <h3 class="cart-quan-Btn">+</h3>
+
+                            <i id="x-close" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-subtotal">
+                        <h3>Subtotal: $599</h3>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <!--CHECKOUT BUTTON-->
+            <div id="cart-checkout">
+                <a href="checkout.html"><button id="cart-checkoutBtn" class="button" type="button"><h3>checkout</h3></button></a>
+            </div>
+        </aside>
+
+        <!--HEADER-->
+        <section id="store-header">
+                <div id="header-text">
+                    <h1>REFINED TECHNOLOGY, FOR A REFINED <mark class="premium"> YOU</mark>.</h1>
+                </div>
+        </section>
+
+        <!--BEST OF APPLE-->
+        <secton id="product2">
+            <h2 class="catalog 2">BEST OF APPLE</h2>
+            <div class="pro2-container">
+                <!--PRODUCT 1-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 1.png" alt="Apple Iphone 17 Pro">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>Iphone 17 Pro</h5>
+                        <h6 class="store-price">starting at $1099</h6>
+                    </div>
+                </div>
+            
+                <!--PRODUCT 2-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 2.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>Iphone 17</h5>
+                        <h6 class="store-price">starting at $799</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 3-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 3.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>Iphone 17 Air</h5>
+                        <h6 class="store-price">starting at $1299</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 4-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 8.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>Iphone 16 Pro Max</h5>
+                        <h6 class="store-price">starting at $1199</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 5-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 11.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>iPad Pro 11-inch M4</h5>
+                        <h6 class="store-price">starting at $1499</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 6-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 9.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>Iphone 16e</h5>
+                        <h6 class="store-price">starting at $599</h6>
+                    </div>
+                </div>
+
+            </div>
+        </secton>
+
+        <!--BEST OF SAMSUNG-->
+        <secton id="product2">
+            <h2 class="catalog 2">BEST OF SAMSUNG</h2>
+            <div class="pro2-container">
+                <!--PRODUCT 1-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 13.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SAMSUNG</span>
+                        <h5>Galaxy Tab S11 Utra</h5>
+                        <h6 class="store-price">starting at $1319</h6>
+                    </div>
+                </div>
+            
+                <!--PRODUCT 2-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 14.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SAMSUNG</span>
+                        <h5>Galaxy S25 FE</h5>
+                        <h6 class="store-price">starting at $1219</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 3-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 15.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SAMSUNG</span>
+                        <h5>Galaxy Z-Flip 7</h5>
+                        <h6 class="store-price">starting at $1299</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 4-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 16.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SAMSUNG</span>
+                        <h5>Galaxy S25 Ultra</h5>
+                        <h6 class="store-price">starting at $1299</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 5-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 17.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SAMSUNG</span>
+                        <h5>Galaxy S25</h5>
+                        <h6 class="store-price">starting at $799</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 6-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 18.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SAMSUNG</span>
+                        <h5>Galaxy Tab S10 Lite</h5>
+                        <h6 class="store-price">starting at $419</h6>
+                    </div>
+                </div>
+
+            </div>
+        </secton>
+
+        <!--BANNER-FASTEST PHONES-->
+        <section id="banner1" class="banner">
+            <h2>NEED <mark class="premium"> PERFORMANCE?</mark>, HERE'S THE FASTEST.</h2>
+        </section>
+
+        <!--FASTEST PHONES-->
+        <secton id="product2">
+            <h2 class="catalog 2">EDITING, GAMING, 4K VIDEO, ALL DONE.</h2>
+            <div class="pro2-container">
+                <!--PRODUCT 1-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 30.png" alt="Asus ROG Phone 9 Pro">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>ASUS</span>
+                        <h5>ROG PHONE 9 PRO</h5>
+                        <h6 class="store-price">starting at $1319</h6>
+                    </div>
+                </div>
+            
+                <!--PRODUCT 2-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 31.png" alt="ZTE Nubia RedMagic 10 Pro">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>ZTE</span>
+                        <h5>RED MAGIC 10 PRO</h5>
+                        <h6 class="store-price">starting at $1219</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 3-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 32.png" alt="Oppo Find X8 Pro">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>OPPO</span>
+                        <h5>FIND X8 PRO</h5>
+                        <h6 class="store-price">starting at $1299</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 4-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 16.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SAMSUNG</span>
+                        <h5>Galaxy S25 Ultra</h5>
+                        <h6 class="store-price">starting at $1299</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 5-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 33.png" alt="OnePlus 13">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>ONEPLUS</span>
+                        <h5>13</h5>
+                        <h6 class="store-price">starting at $799</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 6-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 1.png" alt="Apple Iphone 16 Pro Max">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>IPHONE 16 PRO MAX</h5>
+                        <h6 class="store-price">starting at $1419</h6>
+                    </div>
+                </div>
+
+            </div>
+        </secton>
+
+        <!--BANNER-#1CAMERA PHONES-->
+        <section id="banner2" class="banner">
+            <h2>NEED THE BEST<mark class="premium"> CAMERA?</mark>, CHECK THESE.</h2>
+        </section>
+
+        <!--PHONES WITH BEST CAMERA-->
+        <secton id="product2">
+            <h2 class="catalog 2">FOR THE MOST EYE CATCHING SHOTS.</h2>
+            <div class="pro2-container">
+                <!--PRODUCT 1-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 25.png" alt="Vivo X300 Pro">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>VIVO</span>
+                        <h5>X300 PRO</h5>
+                        <h6 class="store-price">starting at $1499</h6>
+                    </div>
+                </div>
+            
+                <!--PRODUCT 2-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 26.png" alt="Xiaomi 15 Ultra">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>XIAOMI</span>
+                        <h5>15 ULTRA</h5>
+                        <h6 class="store-price">starting at $1409</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 3-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 27.png" alt="Sony Xperia 1 VII">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SONY</span>
+                        <h5>XPERIA 1 VII</h5>
+                        <h6 class="store-price">starting at $1404</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 4-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 28.png" alt="Google Pixel 10 Pro XL">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>GOOGLE</span>
+                        <h5>PIXEL 10 PRO XL</h5>
+                        <h6 class="store-price">starting at $1289</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 5-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 29.png" alt="Honor Magic 7 RSR Porsche Design">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>HONOR</span>
+                        <h5>MAGIC 7 RSR PORSCHE</h5>
+                        <h6 class="store-price">starting at $1549</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 6-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 1.png" alt="Apple Iphone 17 Pro Max">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>IPHONE 17 PRO MAX</h5>
+                        <h6 class="store-price">starting at $1419</h6>
+                    </div>
+                </div>
+
+            </div>
+        </secton>
+
+        <!--BANNER-ACCESSORIES-->
+        <section id="banner3" class="banner">
+            <h2>NEED <mark class="premium"> ACCESSORIES?</mark>, TRY THESE.</h2>
+        </section>
+
+        <!--ACCESSORIES-->
+        <secton id="product2">
+            <h2 class="catalog 2">MAKE YOUR LIFE MORE COMFORTABLE.</h2>
+            <div class="pro2-container">
+                <!--PRODUCT 1-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 19.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>Airpods Pro 2nd Gen</h5>
+                        <h6 class="store-price">starting at $299</h6>
+                    </div>
+                </div>
+            
+                <!--PRODUCT 2-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 20.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>Airpods Max</h5>
+                        <h6 class="store-price">starting at $599</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 3-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 22.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>APPLE</span>
+                        <h5>Watch Ultra 2</h5>
+                        <h6 class="store-price">starting at $799</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 4-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 21.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SAMSUNG</span>
+                        <h5>Galaxy Buds 3</h5>
+                        <h6 class="store-price">starting at $249</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 5-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 23.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>SAMSUNG</span>
+                        <h5>Galaxy Watch 4</h5>
+                        <h6 class="store-price">starting at $159</h6>
+                    </div>
+                </div>
+
+                <!--PRODUCT 6-->
+                <div class="pro2">
+                    <div class="img-download">
+                        <img src="../Assets/Products/prod 24.png" alt="">
+                        <a ><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="description">
+                        <span>UGREEN</span>
+                        <h5>40W Type-C Charger</h5>
+                        <h6 class="store-price">starting at $27</h6>
+                    </div>
+                </div>
+
+            </div>
+        </secton>
+
+        <!--FOOTER-->
+        <footer>
+
+            <div id="text">
+                <p>Copyright © 2025 Rehone LLC. All rights reserved.</p>
+                <p class="break">|</p>
+
+                <a class="hyper" href="privacy.html">Privacy Policy</a>
+                <p class="break">|</p>
+
+                <a class="hyper" href="site_map.html">Site Map</a>
+                <p class="break">|</p>
+
+                <!--Socials-->
+                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-square-x-twitter" ></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+
+        </footer>
+</body>
+
+    <script src="script.js"></script>
+</html>
